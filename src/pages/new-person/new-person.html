@@ -1,0 +1,46 @@
+<!--
+  Generated template for the NewPersonPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>NewPerson</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding text-center>
+
+  <ion-list>
+    <ion-item>
+      <ion-label floating>Name</ion-label>
+      <ion-input [(ngModel)] = "name" type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Email</ion-label>
+      <ion-input [(ngModel)] = "email" type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Phone</ion-label>
+      <ion-input [(ngModel)] = "phone" type="text"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <button ion-button
+          color="primary"
+          (click)="guardar()">
+    Save
+  </button>
+  <button ion-button
+          color="danger"
+          (click)="cancelar()">
+    Cancel
+  </button>
+
+</ion-content>
